@@ -13,4 +13,6 @@ interface HoroscopeApi {
         @Query("day") day:String
     ):Response<HoroscopeResponse>
 
+    //Forzar crash para mostrar el interceptor
+
 }
