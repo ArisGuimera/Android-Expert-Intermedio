@@ -8,7 +8,7 @@
     <item
         android:id="@+id/compatibilityFragment"
         android:icon="@drawable/ic_compatibility"
-        android:title=".Compatibilidad"/>
+        android:title=".Suerte"/>
 
     <item
         android:id="@+id/informationFragment"
