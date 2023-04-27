@@ -28,7 +28,7 @@ object NetworkModule {
     fun provideRetrofit(okHttpClient: OkHttpClient): Retrofit =
         Retrofit
             .Builder()
-            .baseUrl("https://aztro.sameerkumar.website/")
+            .baseUrl("https://newastro.vercel.app/")
             .addConverterFactory(GsonConverterFactory.create())
             .client(okHttpClient)
             .build()
