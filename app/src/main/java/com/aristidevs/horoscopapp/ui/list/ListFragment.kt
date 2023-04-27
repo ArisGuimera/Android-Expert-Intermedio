@@ -1,5 +1,6 @@
 package com.aristidevs.horoscopapp.ui.list
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,6 +10,7 @@ import androidx.fragment.app.viewModels
 import com.aristidevs.horoscopapp.R
 import com.aristidevs.horoscopapp.databinding.FragmentListBinding
 import com.aristidevs.horoscopapp.databinding.FragmentLuckyBinding
+import com.aristidevs.horoscopapp.ui.detail.DetailActivity
 import com.aristidevs.horoscopapp.ui.information.InformationViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -24,16 +26,20 @@ class ListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.btnAries.setOnClickListener {
-            //abrir detalle
+            openDetail()
         }
 
         binding.btnCapricornio.setOnClickListener {
-            //abrir detalle
+            openDetail()
         }
 
         binding.btnLeo.setOnClickListener {
-            //abrir detalle
+            openDetail()
         }
+    }
+
+    private fun openDetail(){
+        startActivity(DetailActivity.create(requireContext()))
     }
 
     override fun onCreateView(
