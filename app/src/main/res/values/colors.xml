@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="primary">#1f1f1f</color>
+    <color name="primaryDark">#181818</color>
+    <color name="secondary">#ee9361</color>
+    <color name="accent">#FFFFFF</color>
+    <color name="gold">#ffe78f</color>
+    <color name="black_alpha">#98000000</color>
+
+    <color name="red">#FF0000</color>
+
+</resources>
