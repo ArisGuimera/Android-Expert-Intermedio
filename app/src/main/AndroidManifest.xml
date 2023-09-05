@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
+        android:name=".HoroscApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -12,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HoroscApp"
         tools:targetApi="31">
+        <activity
+            android:name=".ui.detail.HoroscopeDetailActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.home.MainActivity"
             android:exported="true">
