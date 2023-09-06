@@ -4,8 +4,9 @@ import com.aristidevs.horoscapp.domain.model.HoroscopeInfo
 import com.aristidevs.horoscapp.domain.model.HoroscopeInfo.*
 import javax.inject.Inject
 
-class HoroscopeProvider @Inject constructor() {
-    fun getHoroscopes(): List<HoroscopeInfo> {
+class HoroscopeProvider @Inject constructor(): HoroscopeRepository {
+
+   override fun getHoroscopes(): List<HoroscopeInfo> {
         return listOf(
             Aries,
             Taurus,
@@ -21,4 +22,8 @@ class HoroscopeProvider @Inject constructor() {
             Pisces
         )
     }
+}
+
+interface HoroscopeRepository{
+    fun getHoroscopes(): List<HoroscopeInfo>
 }

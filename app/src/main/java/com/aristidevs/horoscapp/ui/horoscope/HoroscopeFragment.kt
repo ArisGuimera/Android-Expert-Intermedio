@@ -1,11 +1,9 @@
 package com.aristidevs.horoscapp.ui.horoscope
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
@@ -13,10 +11,19 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.aristidevs.horoscapp.databinding.FragmentHoroscopeBinding
-import com.aristidevs.horoscapp.domain.model.HoroscopeInfo
-import com.aristidevs.horoscapp.domain.model.HoroscopeInfo.*
+import com.aristidevs.horoscapp.domain.model.HoroscopeInfo.Aquarius
+import com.aristidevs.horoscapp.domain.model.HoroscopeInfo.Aries
+import com.aristidevs.horoscapp.domain.model.HoroscopeInfo.Cancer
+import com.aristidevs.horoscapp.domain.model.HoroscopeInfo.Capricorn
+import com.aristidevs.horoscapp.domain.model.HoroscopeInfo.Gemini
+import com.aristidevs.horoscapp.domain.model.HoroscopeInfo.Leo
+import com.aristidevs.horoscapp.domain.model.HoroscopeInfo.Libra
+import com.aristidevs.horoscapp.domain.model.HoroscopeInfo.Pisces
+import com.aristidevs.horoscapp.domain.model.HoroscopeInfo.Sagittarius
+import com.aristidevs.horoscapp.domain.model.HoroscopeInfo.Scorpio
+import com.aristidevs.horoscapp.domain.model.HoroscopeInfo.Taurus
+import com.aristidevs.horoscapp.domain.model.HoroscopeInfo.Virgo
 import com.aristidevs.horoscapp.domain.model.HoroscopeModel
 import com.aristidevs.horoscapp.ui.horoscope.adapter.HoroscopeAdapter
 import dagger.hilt.android.AndroidEntryPoint
@@ -43,7 +50,7 @@ class HoroscopeFragment : Fragment() {
 
     private fun initList() {
         horoscopeAdapter = HoroscopeAdapter(onItemSelected = {
-            val type = when(it){
+            val type = when (it) {
                 Aquarius -> HoroscopeModel.Aquarius
                 Aries -> HoroscopeModel.Aries
                 Cancer -> HoroscopeModel.Cancer
@@ -85,6 +92,11 @@ class HoroscopeFragment : Fragment() {
     ): View {
         _binding = FragmentHoroscopeBinding.inflate(layoutInflater, container, false)
         return binding.root
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
     }
 
 }
