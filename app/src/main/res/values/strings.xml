@@ -22,4 +22,7 @@
     <string name="aquarius">Aquarius</string>
     <string name="pisces">Pisces</string>
 
+    <!--    Luck-->
+    <string name="share">Share</string>
+
 </resources>
