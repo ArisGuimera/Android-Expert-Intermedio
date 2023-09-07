@@ -25,4 +25,37 @@
     <!--    Luck-->
     <string name="share">Share</string>
 
+    <string name="luck_0">"A new opportunity will bring unexpected success your way."</string>
+    <string name="luck_1">"You'll meet someone who will change your life for the better."</string>
+    <string name="luck_2">"An exciting journey awaits you in the near future."</string>
+    <string name="luck_3">"A creative project will lead to recognition and fulfillment."</string>
+    <string name="luck_4">"You'll overcome a significant challenge and emerge stronger."</string>
+    <string name="luck_5">"Financial abundance is on the horizon; stay patient."</string>
+    <string name="luck_6">"A long-lost friend will reconnect with you soon."</string>
+    <string name="luck_7">"A big decision will lead to personal growth and happiness."</string>
+    <string name="luck_8">"A dream you've had for years will finally come true."</string>
+    <string name="luck_9">"Trust your intuition; it will guide you toward success."</string>
+    <string name="luck_10">"A hidden talent will emerge, bringing new opportunities."</string>
+    <string name="luck_11">"A change in your routine will lead to unexpected adventures."</string>
+    <string name="luck_12">"Someone from your past will play a significant role in your future."</string>
+    <string name="luck_13">"A serendipitous encounter will lead to a deep and lasting connection."</string>
+    <string name="luck_14">"You'll receive a surprising gift that brings joy to your life."</string>
+    <string name="luck_15">"An unexpected journey will lead to personal transformation."</string>
+    <string name="luck_16">"Your hard work will pay off with a well-deserved reward."</string>
+    <string name="luck_17">"A new chapter in your life will begin, filled with possibilities."</string>
+    <string name="luck_18">"Trust in the timing of events; everything happens for a reason."</string>
+    <string name="luck_19">"Embrace the change coming your way; it will lead to great things."</string>
+    <string name="luck_20">"A stroke of luck will lead you toward a path of prosperity."</string>
+    <string name="luck_21">"A unexpected opportunity will knock on your door; be ready to seize it."</string>
+    <string name="luck_22">"A period of personal growth and self-discovery is on the horizon."</string>
+    <string name="luck_23">"You'll find inspiration in the most unlikely of places."</string>
+    <string name="luck_24">"A new friendship will bring laughter and joy into your life."</string>
+    <string name="luck_25">"Suscríbete a AristiDevs en Youtube."</string>
+    <string name="luck_26">"An important decision will lead to a brighter future."</string>
+    <string name="luck_27">"A long-held wish will finally manifest itself."</string>
+    <string name="luck_28">"You'll discover a new passion that ignites your soul."</string>
+    <string name="luck_29">"A challenge you face now will become a stepping stone to success."</string>
+    <string name="luck_30">"Unexpected travel plans will broaden your horizons."</string>
+    <string name="luck_31">"A surprising twist of fate will bring unexpected blessings."</string>
+
 </resources>
