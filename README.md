@@ -27,7 +27,7 @@ El temario del curso será:
     * Como norma general serán los martes, atent@s a mis redes sociales por si hay algún cambio. También puedes [apuntarte al próximo evento](https://discord.gg/Ban6Rf37?event=1087734921495318658) para no perdértelo.
 
 * **¿Necesito saber programar?**
-    * Necesitas al manos conocimientos básicos, si no los tienes revisa el [curso anterior](https://github.com/ArisGuimera/Android-Expert).
+    * Necesitas al menos conocimientos básicos, si no los tienes revisa el [curso anterior](https://github.com/ArisGuimera/Android-Expert).
 
 * **¿Y si tengo dudas?**
     * Tienes un canal exclusivo para dudas del curso en el [DISCORD](https://discord.com/invite/SVBExkcGyV?fbclid=IwAR02ojS9ErZfGhl3DQjEZHoX92LX8WWj98JYLVAn7OgMXVrrtf86kfYtvhE) llamado **🖥-twitch-curso-android**.
