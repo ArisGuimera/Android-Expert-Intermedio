@@ -1,11 +1,11 @@
+@Suppress("DSL_SCOPE_VIOLATION") // TODO: Remove once KTIJ-19369 is fixed
 plugins {
-    id("com.android.application")
-    id("org.jetbrains.kotlin.android")
-    id("kotlin-kapt")
-    id("com.google.dagger.hilt.android")
-    id ("androidx.navigation.safeargs.kotlin")
+    alias(libs.plugins.androidApplication)
+    alias(libs.plugins.kotlinAndroid)
+    alias(libs.plugins.kapt)
+    alias(libs.plugins.hilt)
+    alias(libs.plugins.safeArgs)
 }
-
 android {
     namespace = "com.aristidevs.horoscapp"
     compileSdk = 34
@@ -57,46 +57,38 @@ android {
 }
 
 dependencies {
+    implementation(libs.core.ktx)
 
-    val navVersion = "2.7.1"
-    val cameraVersion = "1.2.3"
+    implementation(libs.appcompat)
+    implementation(libs.material)
+    implementation(libs.constraintlayout)
 
-    //NavComponent
-    implementation("androidx.navigation:navigation-fragment-ktx:$navVersion")
-    implementation("androidx.navigation:navigation-ui-ktx:$navVersion")
+    implementation(libs.navigation.fragment)
+    implementation(libs.navigation.ui)
 
-    //DaggerHilt
-    implementation("com.google.dagger:hilt-android:2.48")
-    kapt("com.google.dagger:hilt-compiler:2.48")
+    implementation(libs.camera.core)
+    implementation(libs.camera.camera2)
+    implementation(libs.camera.extensions)
+    implementation(libs.camera.lifecycle)
+    implementation(libs.camera.view)
 
-    //Retrofit
-    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
-    implementation ("com.squareup.okhttp3:logging-interceptor:4.3.1")
+    implementation(libs.hilt.android)
+    kapt(libs.hilt.compiler)
 
-    //Camera X
-    implementation ("androidx.camera:camera-core:${cameraVersion}")
-    implementation ("androidx.camera:camera-camera2:${cameraVersion}")
-    implementation ("androidx.camera:camera-lifecycle:${cameraVersion}")
-    implementation ("androidx.camera:camera-view:${cameraVersion}")
-    implementation ("androidx.camera:camera-extensions:${cameraVersion}")
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.converter.gson)
+    implementation(libs.okhttp3.logging.interceptor)
 
-    implementation("androidx.core:core-ktx:1.9.0")
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.9.0")
-    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    testImplementation(libs.junit)
+    testImplementation(libs.kotlin.test.io.runner.junit5)
+    testImplementation(libs.mockk)
 
-    //UnitTesting
-    testImplementation("junit:junit:4.13.2")
-    testImplementation ("io.kotlintest:kotlintest-runner-junit5:3.4.2")
-    testImplementation ("io.mockk:mockk:1.12.3")
-
-    //UITesting
-    androidTestImplementation("androidx.test.ext:junit:1.1.5")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-    androidTestImplementation("androidx.test.espresso:espresso-contrib:3.5.1")
-    androidTestImplementation ("androidx.test.espresso:espresso-intents:3.4.0")
-    androidTestImplementation ("com.google.dagger:hilt-android-testing:2.48")
-    androidTestImplementation ("androidx.fragment:fragment-testing:1.6.1")
-    kaptAndroidTest("com.google.dagger:hilt-android-compiler:2.48")
+    // UI Tests
+    androidTestImplementation(libs.androidx.test.ext.junit)
+    androidTestImplementation(libs.espresso.core)
+    androidTestImplementation(libs.espresso.contrib)
+    androidTestImplementation(libs.espresso.intents)
+    androidTestImplementation(libs.hilt.android.testing)
+    androidTestImplementation(libs.fragment.testing)
+    kaptAndroidTest(libs.hilt.android.compiler)
 }
