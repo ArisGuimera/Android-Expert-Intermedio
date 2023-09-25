@@ -1,7 +1,7 @@
 # ANDROID MASTER INTERMEDIO
 
 <p align="center">
-<img src="https://i.imgur.com/VToCkXJ.jpg" style="height: 75%; width:75%;"/></center> </p>
+<a href="https://youtu.be/UaR7GSNACsM"><img src="https://i.imgur.com/V48W0sU.jpg" style="height: 75%; width:75%;"/></center></a></p>
 
 En esta sección del curso, nos enfocaremos en enseñarte cómo escribir código de calidad para que puedas comenzar a buscar trabajo como desarrollador de Android. Encontrarás todo lo que necesitas para llevar tus habilidades de programación al siguiente nivel, desde conceptos avanzados de programación hasta las mejores prácticas de la industria.
 
@@ -11,14 +11,18 @@ El curso se irá haciendo en DIRECTO en [TWITCH](https://www.twitch.tv/aristidev
 
 El temario del curso será:
 <br />
-- Trabajar con Git de manera eficiente y GitFlow
-- Arquitectura MVVM
-- Inyección de dependencias con Dagger Hilt
-- Retrofit nivel PRO
-- Diseño avanzada
-- Testing
-
-*Temario en proceso, se adaptará a las peticiones de los seguidores*
+- Arquitectura MVVM y clean code 
+- Fragments
+- Navigation Component
+- Gradle KTS
+- Inyección de dependencias
+- StateFlow y corrutinas
+- RecyclerView
+- Retrofit, interceptors y mappers
+- Intents
+- Camera X
+- Animaciones
+- UnitTest y UITest
 
 ---
 
@@ -39,6 +43,6 @@ El temario del curso será:
 Este proyecto es totalmente GRATUITO por lo que puedes aportar tu grano de arena de múltiples formas.
 
 - Dale a FAV al proyecto (Star)
-- Comparte el [tuit original](https://twitter.com/AristiDevs/status/1638175267113041929) para que llegue a más gente
+- Comparte el [tuit original](https://twitter.com/AristiDevs/status/1698613220657770915) para que llegue a más gente
 - Sígueme en mis [redes sociales](https://aristi.dev)
 - Nomíname a [GITHUB STAR](https://stars.github.com/nominate/)
