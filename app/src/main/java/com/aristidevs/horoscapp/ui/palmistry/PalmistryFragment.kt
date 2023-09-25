@@ -88,4 +88,9 @@ class PalmistryFragment : Fragment() {
         _binding = FragmentPalmistryBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
+    }
 }
