@@ -65,7 +65,6 @@ class LuckFragment : Fragment() {
 
     @SuppressLint("ClickableViewAccessibility")
     private fun initListeners() {
-//        binding.ivRoulette.setOnClickListener { spinRoulette() }
 
         binding.ivRoulette.setOnTouchListener(object : OnSwipeTouchListener(requireContext()){
 
@@ -74,15 +73,14 @@ class LuckFragment : Fragment() {
             }
 
             override fun onSwipeLeft() {
-                spinRoulette()
+                spinRoulette(true)
             }
         })
     }
 
-    private fun spinRoulette() {
+    private fun spinRoulette(isLeft: Boolean = false) {
         val random = Random()
-        val degrees = random.nextInt(1440) + 360
-
+        val degrees = (random.nextInt(1440) + 360) * (if (isLeft) -1 else 1)
         val animator =
             ObjectAnimator.ofFloat(binding.ivRoulette, View.ROTATION, 0f, degrees.toFloat())
         animator.duration = 2000
